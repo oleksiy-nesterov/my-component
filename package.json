@@ -1,0 +1,26 @@
+{
+  "name": "my-component",
+  "version": "0.1",
+  "description": "my-component is a simple (develop ready) template for the web component",
+  "main": "dist/umd/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/oleksiy-nesterov/my-component.git",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "watch \"npm run build\" src & npm run open",
+    "open": "browser-sync start --server --port 8082 --cors --startPath 'examples' --files 'dist' 'examples'",
+    "clean": "rm -rf dist",
+    "build": "tsc --outDir dist/umd --module umd && tsc"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "browser-sync": "^2.27.10",
+    "eslint": "^8.19.0",
+    "typescript": "^3.6.4",
+    "watch": "^0.13.0"
+  }
+}
