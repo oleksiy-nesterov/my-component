@@ -4,7 +4,9 @@ my-component is a simple (develop ready) template for the web component
 
 just use files from /dist
 ```
-like: https://raw.github.com/oleksiy-nesterov/my-component/master/dist/index.js
+https://raw.githack.com/
+
+<script type="module" src="https://raw.githack.com/oleksiy-nesterov/my-component/master/dist/index.js"></script>
 ```
 or 
 ```
