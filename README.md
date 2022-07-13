@@ -1,4 +1,4 @@
-<my-component> is a simple (develop ready) template for the web component
+my-component is a simple (develop ready) template for the web component
 
 ## Installation
 
