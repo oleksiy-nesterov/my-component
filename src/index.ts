@@ -15,7 +15,7 @@ class MyComponentElement extends HTMLElement {
 
   connectedCallback() {
     const shadow = this.attachShadow({mode: 'open'});
-    shadow.innerHTML = 'My Component 3';
+    shadow.innerHTML = 'My Component';
     // todo something... 
   }
 

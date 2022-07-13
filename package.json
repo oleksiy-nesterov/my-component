@@ -2,16 +2,16 @@
   "name": "my-component",
   "version": "0.1",
   "description": "<my-component> is a simple (develop ready) template for the web componentgit status",
-  "main": "dist/umd/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/umd/my-component.js",
+  "module": "dist/my-component.js",
+  "types": "dist/my-component.d.ts",
   "repository": "https://github.com/oleksiy-nesterov/my-component.git",
   "files": [
     "dist"
   ],
   "scripts": {
     "start": "watch \"npm run build\" src & npm run open",
-    "open": "browser-sync start --server --port 8082 --cors --startPath 'examples' --files 'dist' 'examples'",
+    "open": "browser-sync start --server --port 8082 --cors --startPath 'example' --files 'dist' 'example'",
     "clean": "rm -rf dist",
     "build": "tsc --outDir dist/umd --module umd && tsc"
   },

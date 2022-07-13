@@ -2,10 +2,16 @@ my-component is a simple (develop ready) template for the web component
 
 ## Installation
 
-```
 just use files from /dist
 ```
+like: https://raw.github.com/oleksiy-nesterov/my-component/master/dist/index.js
+```
+or 
+```
+npm install git+https://github.com/oleksiy-nesterov/my-component.git
 
+npm install git+ssh://git@github.com/oleksiy-nesterov/my-component.git
+```
 ## Usage
 
 ```html
