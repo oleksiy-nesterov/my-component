@@ -3,9 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>my-component demo</title>
+
+  <script type="module" src="../dist/index.js"></script>
+  <script>
+    const onInit = (e) => {
+      console.log(e);
+    }
+  </script>
 </head>
 <body>
-  <my-component></my-component>
-  <script type="module" src="../dist/index.js"></script>
+  <my-component oninit="onInit"></my-component>
+  <my-component oninit="onInit(event)"></my-component>
 </body>
 </html>
