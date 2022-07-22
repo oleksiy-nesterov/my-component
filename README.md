@@ -4,19 +4,19 @@ my-component is a simple (develop ready) template for the web component
 
 use directly with https://raw.githack.com
 ```
-<script type="module" src="https://raw.githack.com/oleksiy-nesterov/my-component/master/dist/index.js"></script>
+<script type="module" src="https://raw.githack.com/oleksiy-nesterov/my-component/master/dist/index.js#v1.0.0"></script>
 ```
 
 use directly with GitHub Pages
 ```
-<script type="module" src="https://oleksiy-nesterov.github.io/my-component/dist/index.js"></script>
+<script type="module" src="https://oleksiy-nesterov.github.io/my-component/dist/index.js#v1.0.0"></script>
 ```
 
 install via NPM
 ```
-npm install git+https://github.com/oleksiy-nesterov/my-component.git
+npm install git+https://github.com/oleksiy-nesterov/my-component.git#v1.0.0
 
-npm install git+ssh://git@github.com/oleksiy-nesterov/my-component.git
+npm install git+ssh://git@github.com/oleksiy-nesterov/my-component.git#v1.0.0
 ```
 ## Usage
 
@@ -46,4 +46,11 @@ npm start
 
 ```
 bash rename.sh
+```
+
+## Create Release Tag
+
+```
+git tag -a v1.0.0 -m "Releasing version v1.0.0" 
+git push --tags
 ```
