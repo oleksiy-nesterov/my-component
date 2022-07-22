@@ -1,6 +1,6 @@
 read -p 'New Component Name (like a "my-component"): ' name
 
-tag=`node -p "\"$name\".toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-+)|(-+$)/g, '')"`
+tag=`node -p "\"$name\".toLowerCase().replace(/[^a-z]+/g, '-').replace(/(^-+)|(-+$)/g, '')"`
 element=`node -p "\"$tag\".replace(/^./, s => s.toUpperCase()).replace(/\-+(.)/g, (_, s) => s.toUpperCase())+'Element'"`
 
 echo
