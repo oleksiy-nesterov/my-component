@@ -41,3 +41,9 @@ Browsers without native [custom element support][support] require a [polyfill][]
 ```
 npm start
 ```
+
+## Rename Component
+
+```
+bash rename.sh
+```
