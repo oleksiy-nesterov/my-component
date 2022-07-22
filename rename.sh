@@ -14,8 +14,8 @@ then
     for f in src/index.ts example/index.html package.json README.md; do
         echo $f - ok;
         if test -f $f; then
-            sed -i '' -e "s/my-component/$tag/" $f
-            sed -i '' -e "s/MyComponentElement/$element/" $f
+            sed -i '' -e "s/my-component/$tag/g" $f
+            sed -i '' -e "s/MyComponentElement/$element/g" $f
         fi
     done
 echo
