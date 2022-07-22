@@ -62,6 +62,6 @@ declare global {
 }
 
 if (!window.customElements.get('my-component')) {
-  window.MyComponentElement = MyComponentElement
+  window.MyComponentElement = MyComponentElement;
   window.customElements.define('my-component', MyComponentElement)
 }

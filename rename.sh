@@ -11,12 +11,12 @@ echo
 read -p "Continue (y/n)? " continue
 if [[ $continue =~ ^[Yy]$ ]] 
 then
-# for f in src/index.ts example/index.html package.json README.md; do
-#   echo $f - ok;
-#   if test -f $f; then
-#     sed -i '' -e "s/my-component/$tag/" $f
-#     sed -i '' -e "s/MyComponentElement/$element/" $f
-#   fi
-# done
+    for f in src/index.ts example/index.html package.json README.md; do
+        echo $f - ok;
+        if test -f $f; then
+            sed -i '' -e "s/my-component/$tag/" $f
+            sed -i '' -e "s/MyComponentElement/$element/" $f
+        fi
+    done
 echo
 fi
