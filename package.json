@@ -1,7 +1,7 @@
 {
   "name": "my-component",
   "version": "0.1",
-  "description": "<my-component> is a simple (develop ready) template for the web componentgit status",
+  "description": "<my-component> is a simple (develop ready) template for the web component",
   "main": "dist/umd/my-component.js",
   "module": "dist/my-component.js",
   "types": "dist/my-component.d.ts",
