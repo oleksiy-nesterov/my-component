@@ -9,12 +9,12 @@ class MyComponentElement extends HTMLElement {
     });
 
     this.dispatchEvent(event);
-    const callback = (this as any)[eventName];
+    const callback = (this as Record<string, unknown>)[`on${eventName}`];
 
     if (typeof callback === 'function') {
       callback();
     } else {
-      const source = this.getAttribute('on' + eventName);
+      const source = this.getAttribute(`on${eventName}`);
       if (source) {
         const func = new Function('e', `var event = e; return ${source}`);
         const result = func.call(this, event);
