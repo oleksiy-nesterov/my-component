@@ -4,7 +4,7 @@ my-component is a simple (develop ready) template for the web component
 
 use directly with https://raw.githack.com
 ```
-<script type="module" src="https://raw.githack.com/oleksiy-nesterov/my-component/v1.0.0/dist/index.js"></script>
+<script type="module" src="https://raw.githack.com/oleksiy-nesterov/my-component/v1.0.2/dist/index.js"></script>
 ```
 
 use directly with GitHub Pages, last version of component
@@ -14,9 +14,9 @@ use directly with GitHub Pages, last version of component
 
 install via NPM
 ```
-npm install git+https://github.com/oleksiy-nesterov/my-component.git#v1.0.0
+npm install git+https://github.com/oleksiy-nesterov/my-component.git#v1.0.2
 
-npm install git+ssh://git@github.com/oleksiy-nesterov/my-component.git#v1.0.0
+npm install git+ssh://git@github.com/oleksiy-nesterov/my-component.git#v1.0.2
 ```
 ## Usage
 
